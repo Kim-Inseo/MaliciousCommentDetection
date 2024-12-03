@@ -1,7 +1,7 @@
 *.npy
 *.pt
 !checkpoint.pt
-/MaliciousCommentDetection/.env
+.env
 
 /PredictApp/predict_model/utils/fastText.model.wv.vectors_ngrams.npy
 
