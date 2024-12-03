@@ -1,10 +1,10 @@
-MaliciousCommentDetection/__pycache__/
-.env
-PredictApp/__pycache__/
-PredictApp/predict_model/ipynb_code/ipynb_datasets/X_train.pt
-PredictApp/predict_model/ipynb_code/ipynb_datasets/X_val.pt
-PredictApp/predict_model/ipynb_code/ipynb_datasets/X_test.pt
-PredictApp/predict_model/utils/fastText.model.wv.vectors_ngrams.npy
+/MaliciousCommentDetection/__pycache__/
+/MaliciousCommentDetection/.env
+/PredictApp/__pycache__/
+/PredictApp/predict_model/ipynb_code/ipynb_datasets/X_train.pt
+/PredictApp/predict_model/ipynb_code/ipynb_datasets/X_val.pt
+/PredictApp/predict_model/ipynb_code/ipynb_datasets/X_test.pt
+/PredictApp/predict_model/utils/fastText.model.wv.vectors_ngrams.npy
 
 # Created by https://www.toptal.com/developers/gitignore/api/django
 # Edit at https://www.toptal.com/developers/gitignore?templates=django
