@@ -15,16 +15,17 @@
 
 ## 프로젝트 구조
 
-- 용량이 큰 fastText.model.wv.vectors_ngrams.npy는 업로드하지 않았음
+- 별도로 표시한 대상(X)은 보안상의 이유나 용량 문제 등으로 인해 업로드하지 않음.
 
 ```
 📦MaliciousCommentDetection
  ┣ 📂MaliciousCommentDetection
  ┃ ┣ 📂__pycache__
- ┃ ┃ ┣ 📜settings.cpython-310.pyc
- ┃ ┃ ┣ 📜urls.cpython-310.pyc
- ┃ ┃ ┣ 📜wsgi.cpython-310.pyc
- ┃ ┃ ┗ 📜__init__.cpython-310.pyc
+ ┃ ┃ ┣ 📜settings.cpython-310.pyc (X)
+ ┃ ┃ ┣ 📜urls.cpython-310.pyc (X)
+ ┃ ┃ ┣ 📜wsgi.cpython-310.pyc (X)
+ ┃ ┃ ┗ 📜__init__.cpython-310.pyc (X)
+ ┃ ┣ 📜.env (X)
  ┃ ┣ 📜asgi.py
  ┃ ┣ 📜settings.py
  ┃ ┣ 📜urls.py
@@ -32,21 +33,21 @@
  ┃ ┗ 📜__init__.py
  ┣ 📂PredictApp
  ┃ ┣ 📂data
- ┃ ┃ ┗ 📜Dataset.csv
+ ┃ ┃ ┗ 📜Dataset.csv (X)
  ┃ ┣ 📂migrations
  ┃ ┃ ┣ 📂__pycache__
- ┃ ┃ ┃ ┣ 📜0001_initial.cpython-310.pyc
- ┃ ┃ ┃ ┗ 📜__init__.cpython-310.pyc
- ┃ ┃ ┣ 📜0001_initial.py
- ┃ ┃ ┗ 📜__init__.py
+ ┃ ┃ ┃ ┣ 📜0001_initial.cpython-310.pyc (X)
+ ┃ ┃ ┃ ┗ 📜__init__.cpython-310.pyc (X)
+ ┃ ┃ ┣ 📜0001_initial.py (X)
+ ┃ ┃ ┗ 📜__init__.py (X)
  ┃ ┣ 📂predict_model
  ┃ ┃ ┣ 📂code
  ┃ ┃ ┃ ┣ 📂__pycache__
- ┃ ┃ ┃ ┃ ┣ 📜classification_model.cpython-310.pyc
- ┃ ┃ ┃ ┃ ┣ 📜config.cpython-310.pyc
- ┃ ┃ ┃ ┃ ┣ 📜modeling.cpython-310.pyc
- ┃ ┃ ┃ ┃ ┣ 📜preparing_nlp.cpython-310.pyc
- ┃ ┃ ┃ ┃ ┗ 📜preprocessing.cpython-310.pyc
+ ┃ ┃ ┃ ┃ ┣ 📜classification_model.cpython-310.pyc (X)
+ ┃ ┃ ┃ ┃ ┣ 📜config.cpython-310.pyc (X)
+ ┃ ┃ ┃ ┃ ┣ 📜modeling.cpython-310.pyc (X)
+ ┃ ┃ ┃ ┃ ┣ 📜preparing_nlp.cpython-310.pyc (X)
+ ┃ ┃ ┃ ┃ ┗ 📜preprocessing.cpython-310.pyc (X)
  ┃ ┃ ┃ ┣ 📜classification_model.py
  ┃ ┃ ┃ ┣ 📜config.py
  ┃ ┃ ┃ ┣ 📜modeling.py
@@ -57,32 +58,32 @@
  ┃ ┃ ┃ ┃ ┣ 📜test_data.csv
  ┃ ┃ ┃ ┃ ┣ 📜train_data.csv
  ┃ ┃ ┃ ┃ ┣ 📜val_data.csv
- ┃ ┃ ┃ ┃ ┣ 📜X_test.pt
- ┃ ┃ ┃ ┃ ┣ 📜X_train.pt
- ┃ ┃ ┃ ┃ ┗ 📜X_val.pt
+ ┃ ┃ ┃ ┃ ┣ 📜X_test.pt (X)
+ ┃ ┃ ┃ ┃ ┣ 📜X_train.pt (X)
+ ┃ ┃ ┃ ┃ ┗ 📜X_val.pt (X)
  ┃ ┃ ┃ ┗ 📜code_modeling.ipynb
  ┃ ┃ ┣ 📂utils
  ┃ ┃ ┃ ┣ 📜checkpoint.pt
  ┃ ┃ ┃ ┣ 📜fastText.model
- ┃ ┃ ┃ ┣ 📜fastText.model.wv.vectors_ngrams.npy
+ ┃ ┃ ┃ ┣ 📜fastText.model.wv.vectors_ngrams.npy (X)
  ┃ ┃ ┃ ┣ 📜var_models.json
  ┃ ┃ ┃ ┗ 📜var_utils.json
  ┃ ┃ ┗ 📂__pycache__
- ┃ ┃ ┃ ┣ 📜preparing_nlp.cpython-310.pyc
- ┃ ┃ ┃ ┗ 📜preprocessing.cpython-310.pyc
- ┃ ┣ 📂static            # 아직 작성하지 않음
+ ┃ ┃ ┃ ┣ 📜preparing_nlp.cpython-310.pyc (X)
+ ┃ ┃ ┃ ┗ 📜preprocessing.cpython-310.pyc (X)
+ ┃ ┣ 📂static # 아직 작성하지 않음
  ┃ ┃ ┗ 📂PredictApp
  ┃ ┣ 📂templates
  ┃ ┃ ┗ 📂PredictApp
  ┃ ┃ ┃ ┣ 📜input_form.html
  ┃ ┃ ┃ ┗ 📜predict_result.html
  ┃ ┣ 📂__pycache__
- ┃ ┃ ┣ 📜admin.cpython-310.pyc
- ┃ ┃ ┣ 📜apps.cpython-310.pyc
- ┃ ┃ ┣ 📜models.cpython-310.pyc
- ┃ ┃ ┣ 📜urls.cpython-310.pyc
- ┃ ┃ ┣ 📜views.cpython-310.pyc
- ┃ ┃ ┗ 📜__init__.cpython-310.pyc
+ ┃ ┃ ┣ 📜admin.cpython-310.pyc (X)
+ ┃ ┃ ┣ 📜apps.cpython-310.pyc (X)
+ ┃ ┃ ┣ 📜models.cpython-310.pyc (X)
+ ┃ ┃ ┣ 📜urls.cpython-310.pyc (X)
+ ┃ ┃ ┣ 📜views.cpython-310.pyc (X)
+ ┃ ┃ ┗ 📜__init__.cpython-310.pyc (X)
  ┃ ┣ 📜admin.py
  ┃ ┣ 📜apps.py
  ┃ ┣ 📜models.py
@@ -90,7 +91,7 @@
  ┃ ┣ 📜urls.py
  ┃ ┣ 📜views.py
  ┃ ┗ 📜__init__.py
- ┣ 📜db.sqlite3
+ ┣ 📜db.sqlite3 (X)
  ┣ 📜db_uploader.py
  ┣ 📜manage.py
  ┣ 📜README.md
