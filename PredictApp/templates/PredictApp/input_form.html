@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>악성 댓글 탐지</title>
+</head>
+<body>
+  <h1>확인하고 싶은 댓글을 입력해 주세요.</h1>
+  <form action="/PredictApp/predict/" method="post">
+    {% csrf_token %}
+    <label for="input_text">입력한 댓글:</label>
+    <input type="text" id="input_text" name="input_text" required>
+    <button type="submit">제출</button>
+  </form>
+</body>
+</html>
